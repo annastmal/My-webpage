@@ -1,1 +1,85 @@
 @import "./variables";
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: $main_background_colour;
+}
+.main_img {
+  padding-top: 50px;
+  display: flex;
+}
+h1 {
+  font-family: Jacques Francois Shadow;
+  font-size: 100px;
+  color: $main_text_colour;
+  display: flex;
+  padding-top: 124px;
+  margin-bottom: 28px;
+}
+h2 {
+  font-family: "Merriweather";
+  font-size: 30px;
+  line-height: 54px;
+  display: flex;
+  color: $main_text_colour;
+  margin-bottom: 30px;
+ 
+}
+h3 {
+  font-family: "Merriweather";
+  font-size: 25px;
+  opacity: 80%;
+  color: $main_text_colour;
+}
+.hero {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  margin-top: 40px;
+}
+.skills_button{
+
+}
+.contact button{
+
+}
+@media only screen and (max-width: 770px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .main_img {
+    width: 412px ;
+    height: 470px;
+  }
+  h1 {
+    margin-left: -100px;
+    text-align: center;
+    font-size: 80px !important;
+    width: 100px;
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: ellipsis;
+  }
+  h2 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: -70px;
+    width: 100px;
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: ellipsis;
+  }
+  h3 {
+    font-size: 16px;
+    margin-left: -100px;
+    width: 100px;
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: ellipsis;
+    margin-bottom: 30px;
+  }
+}
