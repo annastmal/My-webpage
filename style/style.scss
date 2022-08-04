@@ -1,5 +1,14 @@
 @import "./variables";
-
+@mixin mainButtons {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  font-family: "Jacques Francois";
+  font-size: 20px;
+  line-height: 53px;
+  text-align: center;
+  width: 337px;
+  height: 86px;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -9,6 +18,11 @@ body {
 .main_img {
   padding-top: 50px;
   display: flex;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 h1 {
   font-family: Jacques Francois Shadow;
@@ -25,12 +39,12 @@ h2 {
   display: flex;
   color: $main_text_colour;
   margin-bottom: 30px;
- 
 }
+
 h3 {
   font-family: "Merriweather";
   font-size: 25px;
-  opacity: 80%;
+  opacity: 60%;
   color: $main_text_colour;
 }
 .hero {
@@ -39,47 +53,90 @@ h3 {
   padding: 30px;
   margin-top: 40px;
 }
-.skills_button{
-
+.skills_button {
+  @include mainButtons();
+  background: $secondary_colour;
+  color: #f6f4f4;
+  text-shadow: -1px -1px 0 $shadow-colour, 1px -1px 0 $shadow-colour,
+    -1px 1px 0 $shadow-colour, 1px 1px 0 $shadow-colour;
 }
-.contact button{
-
+.contact_button {
+  @include mainButtons();
+  color: $shadow-colour;
+  text-shadow: -1px -1px 0 $secondary_colour, 1px -1px 0 $secondary_colour,
+    -1px 1px 0 $secondary_colour, 1px 1px 0 $secondary_colour;
+  background: $additional_colour;
 }
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 900px) {
+    .container {
+        width: fit-content;
+    }
   .hero {
+      display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     text-align: center;
+    justify-content: center;
   }
   .main_img {
-    width: 412px ;
+    width: 412px;
     height: 470px;
+    justify-content:center;
   }
   h1 {
-    margin-left: -100px;
+    margin-left: 100px;
     text-align: center;
-    font-size: 80px !important;
+    font-size: 60px;
     width: 100px;
     white-space: nowrap;
     overflow: visible;
     text-overflow: ellipsis;
+    justify-content: center;
+    margin: 0px auto;
+    padding: 0px auto;
   }
   h2 {
-    font-size: 20px;
+    margin-left: 100px;
+    font-size: 25px;
     line-height: 30px;
+    justify-content: center;
+    width: 100px;
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: ellipsis;
+    margin: 0px auto;
+    padding: 0px auto;
+    margin-top: 24px;
+  }
+  h3 {
+    font-size: 15px;
     margin-left: -70px;
     width: 100px;
     white-space: nowrap;
     overflow: visible;
     text-overflow: ellipsis;
-  }
-  h3 {
-    font-size: 16px;
-    margin-left: -100px;
-    width: 100px;
-    white-space: nowrap;
-    overflow: visible;
-    text-overflow: ellipsis;
     margin-bottom: 30px;
+    justify-content: center;
+    margin-left: -100px;
+    margin-top: 24px;
   }
 }
+@media only screen and (max-width: 650px){
+    h1 {
+        font-size: 45px;
+        margin: 0px auto;
+        padding: 0px auto;
+    }
+    h2 {
+        font-size: 19px;
+        margin: 0px auto;
+        margin-top: 24px;
+        padding: 0px auto;
+    }
+    h3 {
+        font-size: 11px;
+        margin-left: -50px;
+        margin-top: 24px;
+    }
+}
+
