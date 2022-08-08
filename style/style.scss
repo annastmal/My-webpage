@@ -1,4 +1,5 @@
 @import "./variables";
+
 @mixin mainButtons {
   display: block;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -10,7 +11,7 @@
   text-align: center;
   text-decoration: none;
 }
-@mixin mainButtonsSm($width, $font-size, $line-height ) {
+@mixin mainButtonsSm($width, $font-size, $line-height) {
   display: block;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
@@ -27,12 +28,14 @@ html {
 body {
   background-color: $main_background_colour;
 }
+.navbar {
+  padding: 10px;
+}
 .container {
   width: fit-content;
 }
 .main_img {
   padding-top: 50px;
-  display: flex;
 }
 h1 {
   font-family: Jacques Francois Shadow;
@@ -83,7 +86,7 @@ h3 {
     -1px 0.1px 0 $secondary_colour, 0.5px 0px 0px $secondary_colour;
   background: $additional_colour;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 992px) {
   .hero {
     display: flex;
     flex-direction: column;
@@ -94,9 +97,10 @@ h3 {
     margin-bottom: 50px;
   }
   .main_img {
-    width: 412px;
-    height: 470px;
+    width: 300px;
+    height: 350px;
   }
+
   h1 {
     margin-left: 100px;
     text-align: center;
@@ -143,8 +147,9 @@ h3 {
     @include mainButtonsSm(200px, 18px, 30px);
     background: $additional_colour;
     color: $shadow-colour;
-    text-shadow: -0.1px -0.1px 0 $secondary_colour, 1px -0.5px 0 $secondary_colour,
-      -1px 0.1px 0 $secondary_colour, 0.5px 0px 0px $secondary_colour;
+    text-shadow: -0.1px -0.1px 0 $secondary_colour,
+      1px -0.5px 0 $secondary_colour, -1px 0.1px 0 $secondary_colour,
+      0.5px 0px 0px $secondary_colour;
   }
 }
 @media only screen and (max-width: 560px) {
@@ -174,8 +179,9 @@ h3 {
   .contact_button {
     @include mainButtonsSm(150px, 14px, 24px);
     color: $shadow-colour;
-    text-shadow: -0.1px -0.1px 0 $secondary_colour, 1px -0.5px 0 $secondary_colour,
-      -1px 0.1px 0 $secondary_colour, 0.5px 0px 0px $secondary_colour;
+    text-shadow: -0.1px -0.1px 0 $secondary_colour,
+      1px -0.5px 0 $secondary_colour, -1px 0.1px 0 $secondary_colour,
+      0.5px 0px 0px $secondary_colour;
     background: $additional_colour;
   }
 }
