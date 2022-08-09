@@ -1,19 +1,10 @@
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: #DAE3E5;
+  background: radial-gradient(circle, rgb(240, 240, 240) 0%, rgb(218, 227, 229) 100%);
 }
 
 .navbar {
   padding: 10px;
-}
-
-.container {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .main_img {
@@ -88,7 +79,41 @@ h3 {
   background: #F6F4F4;
 }
 
-@media only screen and (max-width: 992px) {
+.about {
+  background-color: #F6F4F4;
+  padding-bottom: 100px;
+  display: flex;
+}
+
+section {
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.wrapper {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.container-content {
+  display: flex;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 25px;
+  color: #333232;
+  line-height: 40px;
+}
+
+.hello {
+  color: #7A5361;
+  font-family: "McLaren";
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
   .hero {
     display: flex;
     flex-direction: column;
@@ -165,6 +190,24 @@ h3 {
     color: #8B8989;
     text-shadow: -0.1px -0.1px 0 #7A5361, 1px -0.5px 0 #7A5361, -1px 0.1px 0 #7A5361, 0.5px 0px 0px #7A5361;
   }
+  .wrapper {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+  }
+  .container-content {
+    display: flex;
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 20px;
+    color: #333232;
+    line-height: 30px;
+  }
+  .hello {
+    color: #7A5361;
+    font-family: "McLaren";
+    font-size: 24px;
+  }
 }
 @media only screen and (max-width: 560px) {
   h1 {
@@ -210,5 +253,25 @@ h3 {
     color: #8B8989;
     text-shadow: -0.1px -0.1px 0 #7A5361, 1px -0.5px 0 #7A5361, -1px 0.1px 0 #7A5361, 0.5px 0px 0px #7A5361;
     background: #F6F4F4;
+  }
+  .wrapper {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .container-content {
+    display: flex;
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: #333232;
+    line-height: 24px;
+  }
+  .hello {
+    color: #7A5361;
+    font-family: "McLaren";
+    font-size: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,4 @@
 @import "./variables";
-
 @mixin mainButtons {
   display: block;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -22,18 +21,16 @@
   text-align: center;
   text-decoration: none;
 }
-html {
-  scroll-behavior: smooth;
-}
+//Home page
+
 body {
   background-color: $main_background_colour;
+ background:  radial-gradient(circle, rgba(240,240,240,1) 0%, rgba(218,227,229,1) 100%);
 }
 .navbar {
   padding: 10px;
 }
-.container {
-  width: fit-content;
-}
+
 .main_img {
   padding-top: 50px;
 }
@@ -86,7 +83,38 @@ h3 {
     -1px 0.1px 0 $secondary_colour, 0.5px 0px 0px $secondary_colour;
   background: $additional_colour;
 }
-@media only screen and (max-width: 992px) {
+//About page
+.about {
+  background-color: $additional_colour;
+  padding-bottom: 100px;
+  display: flex;
+}
+section {
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.wrapper {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.container-content {
+  display:flex;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 25px;
+  color: $main_text_colour;
+  line-height: 40px;
+}
+.hello {
+  color: $secondary_colour;
+  font-family: 'McLaren';
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
   .hero {
     display: flex;
     flex-direction: column;
@@ -95,11 +123,11 @@ h3 {
     justify-content: center;
     padding-bottom: 50px;
     margin-bottom: 50px;
-  }
+  }  
   .main_img {
     width: 300px;
     height: 350px;
-  }
+  }  
 
   h1 {
     margin-left: 100px;
@@ -112,7 +140,7 @@ h3 {
     justify-content: center;
     margin: 0px auto;
     padding: 0px auto;
-  }
+  }  
   h2 {
     margin-left: 100px;
     font-size: 25px;
@@ -125,24 +153,24 @@ h3 {
     margin: 0px auto;
     padding: 0px auto;
     margin-top: 24px;
-  }
+  }  
   .line {
     height: 1px;
     width: 100%;
     color: black;
-  }
+  }  
   h3 {
     font-size: 14px;
     margin-bottom: 30px;
     margin-top: 24px;
-  }
+  }  
   .skills_button {
     @include mainButtonsSm(200px, 18px, 30px);
     background: $secondary_colour;
     color: #f6f4f4;
     text-shadow: -1px -1px 0 $shadow-colour, 1px -1px 0 $shadow-colour,
       -1px 1px 0 $shadow-colour, 1px 1px 0 $shadow-colour;
-  }
+  }    
   .contact_button {
     @include mainButtonsSm(200px, 18px, 30px);
     background: $additional_colour;
@@ -150,38 +178,77 @@ h3 {
     text-shadow: -0.1px -0.1px 0 $secondary_colour,
       1px -0.5px 0 $secondary_colour, -1px 0.1px 0 $secondary_colour,
       0.5px 0px 0px $secondary_colour;
-  }
-}
+  }    
+  ///About page
+  .wrapper {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+  }  
+  .container-content {
+    display: flex;
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 20px;
+    color: $main_text_colour;
+    line-height: 30px;
+  }  
+  .hello {
+    color: $secondary_colour;
+    font-family: 'McLaren';
+    font-size: 24px;
+  }  
+}  
 @media only screen and (max-width: 560px) {
   h1 {
     font-size: 45px;
     margin: 0px auto;
     padding: 0px auto;
-  }
+  }  
   h2 {
     font-size: 19px;
     margin: 0px auto;
     margin-top: 24px;
     padding: 0px auto;
-  }
+  }  
   h3 {
     font-size: 11px;
     margin-left: 5px !important;
     margin-top: 24px;
-  }
+  }  
   .skills_button {
     @include mainButtonsSm(150px, 14px, 24px);
     background: $secondary_colour;
     color: #f6f4f4;
     text-shadow: -1px -1px 0 $shadow-colour, 1px -1px 0 $shadow-colour,
       -1px 1px 0 $shadow-colour, 1px 1px 0 $shadow-colour;
-  }
+  }    
   .contact_button {
     @include mainButtonsSm(150px, 14px, 24px);
     color: $shadow-colour;
     text-shadow: -0.1px -0.1px 0 $secondary_colour,
       1px -0.5px 0 $secondary_colour, -1px 0.1px 0 $secondary_colour,
       0.5px 0px 0px $secondary_colour;
-    background: $additional_colour;
-  }
-}
+    background: $additional_colour;  
+  }  
+  .wrapper {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+  }  
+  .container-content {
+    display: flex;
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: $main_text_colour;
+    line-height: 24px;
+  }  
+  .hello {
+    color: $secondary_colour;
+    font-family: 'McLaren';
+    font-size: 20px;
+  }  
+}  
