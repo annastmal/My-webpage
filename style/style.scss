@@ -9,7 +9,6 @@
   line-height: 45px;
   text-align: center;
   text-decoration: none;
-  margin-top: 20px;
 }
 @mixin mainButtonsSm($width, $font-size, $line-height) {
   display: block;
@@ -69,6 +68,7 @@ h3 {
 
 .buttons {
   gap: 10px;
+  margin-top: 20px;
 }
 .skills_button {
   @include mainButtons();
@@ -76,6 +76,7 @@ h3 {
   color: #f6f4f4;
   text-shadow: -1px -1px 0 $shadow-colour, 1px -1px 0 $shadow-colour,
     -1px 1px 0 $shadow-colour, 1px 1px 0 $shadow-colour;
+
 }
 .contact_button {
   @include mainButtons();
@@ -83,6 +84,7 @@ h3 {
   text-shadow: -0.1px -0.1px 0 $secondary_colour, 1px -0.5px 0 $secondary_colour,
     -1px 0.1px 0 $secondary_colour, 0.5px 0px 0px $secondary_colour;
   background: $additional_colour;
+ 
 }
 //About page
 .about {
