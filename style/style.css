@@ -285,6 +285,12 @@ h4 {
     margin-bottom: 30px;
     margin-top: 24px;
   }
+  h4 {
+    font-size: 16px;
+  }
+  .tools {
+    font-size: 32px;
+  }
   .skills_button {
     display: block;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -354,6 +360,13 @@ h4 {
     font-size: 11px;
     margin-left: 5px !important;
     margin-top: 24px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  .tools {
+    font-size: 26px;
+    padding-right: 80px;
   }
   .skills_button {
     display: block;

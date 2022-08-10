@@ -266,6 +266,12 @@ h4 {
     margin-bottom: 30px;
     margin-top: 24px;
   }
+  h4 {
+    font-size: 16px;
+  }
+  .tools{
+    font-size: 32px;
+  }
   .skills_button {
     @include mainButtonsSm(200px, 18px, 30px);
     background: $secondary_colour;
@@ -323,6 +329,13 @@ h4 {
     font-size: 11px;
     margin-left: 5px !important;
     margin-top: 24px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  .tools{
+    font-size: 26px;
+    padding-right: 80px;
   }
   .skills_button {
     @include mainButtonsSm(150px, 14px, 24px);
