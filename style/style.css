@@ -122,6 +122,120 @@ section {
   font-size: 30px;
 }
 
+.angle1,
+.angle1::after {
+  height: 35px;
+  width: 100%;
+}
+
+.angle1 {
+  background-color: #7a5361;
+}
+
+.angle {
+  position: relative;
+}
+
+.angle:after {
+  content: "";
+  position: absolute;
+}
+
+.angle1::after {
+  background-color: #f6f4f4;
+  -webkit-clip-path: polygon(0 0, 100% 0, 25% 100%);
+  clip-path: polygon(0% 0, 100% 0%, 25% 100%, 0 0%);
+}
+
+.incline_line1 {
+  position: absolute;
+  width: 100%;
+  transform: rotate(3deg);
+  color: #7a5361;
+  border: 1.5px solid;
+  border-color: rgb(127, 2, 44);
+}
+
+.incline_line2 {
+  position: absolute;
+  width: 100%;
+  transform: rotate(-2.3deg);
+  color: #7a5361;
+  border: 1.5px solid;
+  border-color: rgb(127, 2, 44);
+}
+
+.incline_line3 {
+  position: absolute;
+  width: 100%;
+  transform: rotate(2.62deg);
+  color: #7a5361;
+  border: 1.5px solid;
+  border-color: rgb(127, 2, 44);
+  top: 80px;
+  z-index: 0;
+}
+
+.incline_line4 {
+  position: absolute;
+  width: 100%;
+  transform: rotate(-2.68deg);
+  color: #7a5361;
+  border: 1.5px solid;
+  border-color: rgb(127, 2, 44);
+  top: 80px;
+  z-index: 0;
+}
+
+.skills-tools {
+  background-color: #7a5361;
+}
+
+h4 {
+  font-family: Open Sans;
+  color: #333232;
+  padding-left: 60px;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  padding-top: 60px;
+}
+
+.tools1 {
+  background-color: #f6f4f4;
+}
+
+.tools {
+  color: #333232;
+  font-family: Jacques Francois Shadow;
+  font-size: 42px;
+  padding-left: 60px;
+  padding-bottom: 60px;
+}
+
+.container_icons {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.box_icon {
+  color: #f6f4f4;
+  width: 12%;
+  height: 124px;
+  margin-bottom: 10px;
+}
+
+.icon_text {
+  color: #f6f4f4;
+  font-family: "Montserrat";
+  margin-top: 16px;
+}
+
 @media only screen and (max-width: 1200px) {
   .hero {
     display: flex;
@@ -217,6 +331,12 @@ section {
     font-family: "McLaren";
     font-size: 24px;
   }
+  .box_icon {
+    width: 24%;
+  }
+  .icon_text {
+    font-size: 14px;
+  }
 }
 @media only screen and (max-width: 560px) {
   h1 {
@@ -283,13 +403,13 @@ section {
     font-family: "McLaren";
     font-size: 20px;
   }
+  .box_icon {
+    width: 50%;
+  }
+  .icon_text {
+    font-size: 12px;
+  }
 }
-.angle1,
-.angle1::after {
-  height: 35px;
-  width: 100%;
-}
-
 @media (min-width: 600px) {
   .angle1,
 .angle1::after {
@@ -301,111 +421,4 @@ section {
 .angle1::after {
     height: 75px;
   }
-}
-.angle1 {
-  background-color: #7a5361;
-}
-
-.angle {
-  position: relative;
-}
-
-.angle:after {
-  content: "";
-  position: absolute;
-}
-
-.angle1::after {
-  background-color: #f6f4f4;
-  -webkit-clip-path: polygon(0 0, 100% 0, 25% 100%);
-  clip-path: polygon(0% 0, 100% 0%, 25% 100%, 0 0%);
-}
-
-.skills-tools {
-  background-color: #7a5361;
-}
-
-.incline_line1 {
-  position: absolute;
-  width: 100%;
-  transform: rotate(3deg);
-  color: #7a5361;
-  border: 1.5px solid;
-  border-color: rgb(127, 2, 44);
-}
-
-.incline_line2 {
-  position: absolute;
-  width: 100%;
-  transform: rotate(-2.3deg);
-  color: #7a5361;
-  border: 1.5px solid;
-  border-color: rgb(127, 2, 44);
-}
-
-.incline_line3 {
-  position: absolute;
-  width: 100%;
-  transform: rotate(2.62deg);
-  color: #7a5361;
-  border: 1.5px solid;
-  border-color: rgb(127, 2, 44);
-  top: 80px;
-  z-index: 0;
-}
-
-.incline_line4 {
-  position: absolute;
-  width: 100%;
-  transform: rotate(-2.68deg);
-  color: #7a5361;
-  border: 1.5px solid;
-  border-color: rgb(127, 2, 44);
-  top: 80px;
-  z-index: 0;
-}
-
-h4 {
-  font-family: Open Sans;
-  color: #333232;
-  padding-left: 60px;
-  font-size: 20px;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-  padding-top: 60px;
-}
-
-.tools1 {
-  background-color: #f6f4f4;
-}
-
-.tools {
-  color: #333232;
-  font-family: Jacques Francois Shadow;
-  font-size: 42px;
-  padding-left: 60px;
-  padding-bottom: 60px;
-}
-
-.container_icons {
-  text-align: center;
-  margin-bottom: 3rem;
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.box_icon {
-  color: #f6f4f4;
-  width: 25%;
-  height: 124px;
-  margin-bottom: 10px;
-}
-
-.icon_text {
-  color: #f6f4f4;
-  font-family: "Montserrat";
-  margin-top: 16px;
 }/*# sourceMappingURL=style.css.map */

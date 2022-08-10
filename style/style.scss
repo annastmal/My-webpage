@@ -132,6 +132,91 @@ section {
   font-family: "McLaren";
   font-size: 30px;
 }
+///Angles
+.angle1,
+.angle1::after {
+  height: 35px;
+  width: 100%;
+}
+
+
+.angle1 {
+  background-color: $secondary_colour;
+}
+
+.angle {
+  position: relative;
+}
+
+.angle:after {
+  content: "";
+  position: absolute;
+}
+
+.angle1::after {
+  background-color: $additional_colour;
+  -webkit-clip-path: polygon(0 0, 100% 0, 25% 100%);
+  clip-path: polygon(0% 0, 100% 0%, 25% 100%, 0 0%);
+}
+
+.incline_line1 {
+  @include line(rotate(3deg));
+}
+.incline_line2 {
+  @include line(rotate(-2.3deg));
+}
+.incline_line3 {
+  @include line(rotate(2.62deg));
+  top: 80px;
+  z-index: 0;
+}
+.incline_line4{
+  @include line(rotate(-2.68deg));
+  top: 80px;
+  z-index: 0;
+}
+.skills-tools {
+  background-color: $secondary_colour;
+}
+h4 {
+  font-family: $main_font;
+  color: $main_text_colour;
+  padding-left: 60px;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  padding-top: 60px;
+}
+.tools1 {
+  background-color: $additional_colour;
+}
+.tools {
+  color: $main_text_colour;
+  font-family: $secondary_font;
+  font-size: 42px;
+  padding-left: 60px;
+  padding-bottom: 60px;
+}
+.container_icons {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.box_icon {
+  color: $additional_colour;
+  width: 12%;
+  height: 124px;
+  margin-bottom: 10px;
+}
+.icon_text {
+  color: $additional_colour;
+  font-family: "Montserrat";
+  margin-top: 16px;
+}
 @media only screen and (max-width: 1200px) {
   .hero {
     display: flex;
@@ -186,15 +271,15 @@ section {
     background: $secondary_colour;
     color: #f6f4f4;
     text-shadow: -1px -1px 0 $shadow-colour, 1px -1px 0 $shadow-colour,
-      -1px 1px 0 $shadow-colour, 1px 1px 0 $shadow-colour;
+    -1px 1px 0 $shadow-colour, 1px 1px 0 $shadow-colour;
   }
   .contact_button {
     @include mainButtonsSm(200px, 18px, 30px);
     background: $additional_colour;
     color: $shadow-colour;
     text-shadow: -0.1px -0.1px 0 $secondary_colour,
-      1px -0.5px 0 $secondary_colour, -1px 0.1px 0 $secondary_colour,
-      0.5px 0px 0px $secondary_colour;
+    1px -0.5px 0 $secondary_colour, -1px 0.1px 0 $secondary_colour,
+    0.5px 0px 0px $secondary_colour;
   }
   ///About page
   .wrapper {
@@ -214,6 +299,12 @@ section {
     color: $secondary_colour;
     font-family: "McLaren";
     font-size: 24px;
+  }
+  .box_icon {
+    width: 24%;
+  }
+  .icon_text {
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 560px) {
@@ -238,14 +329,14 @@ section {
     background: $secondary_colour;
     color: #f6f4f4;
     text-shadow: -1px -1px 0 $shadow-colour, 1px -1px 0 $shadow-colour,
-      -1px 1px 0 $shadow-colour, 1px 1px 0 $shadow-colour;
+    -1px 1px 0 $shadow-colour, 1px 1px 0 $shadow-colour;
   }
   .contact_button {
     @include mainButtonsSm(150px, 14px, 24px);
     color: $shadow-colour;
     text-shadow: -0.1px -0.1px 0 $secondary_colour,
-      1px -0.5px 0 $secondary_colour, -1px 0.1px 0 $secondary_colour,
-      0.5px 0px 0px $secondary_colour;
+    1px -0.5px 0 $secondary_colour, -1px 0.1px 0 $secondary_colour,
+    0.5px 0px 0px $secondary_colour;
     background: $additional_colour;
   }
   .wrapper {
@@ -268,12 +359,12 @@ section {
     font-family: "McLaren";
     font-size: 20px;
   }
-}
-
-.angle1,
-.angle1::after {
-  height: 35px;
-  width: 100%;
+  .box_icon {
+    width: 50%;
+  }
+  .icon_text {
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 600px) {
@@ -288,82 +379,4 @@ section {
   .angle1::after {
     height: 75px;
   }
-}
-
-.angle1 {
-  background-color: $secondary_colour;
-}
-
-.angle {
-  position: relative;
-}
-
-.angle:after {
-  content: "";
-  position: absolute;
-}
-
-.angle1::after {
-  background-color: $additional_colour;
-  -webkit-clip-path: polygon(0 0, 100% 0, 25% 100%);
-  clip-path: polygon(0% 0, 100% 0%, 25% 100%, 0 0%);
-}
-
-.skills-tools {
-  background-color: $secondary_colour;
-}
-.incline_line1 {
-  @include line(rotate(3deg));
-}
-.incline_line2 {
-  @include line(rotate(-2.3deg));
-}
-.incline_line3 {
-  @include line(rotate(2.62deg));
-top: 80px;
-z-index: 0;
-}
-.incline_line4{
-  @include line(rotate(-2.68deg));
-  top: 80px;
-  z-index: 0;
-}
-h4 {
-  font-family: $main_font;
-  color: $main_text_colour;
-  padding-left: 60px;
-  font-size: 20px;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-  padding-top: 60px;
-}
-.tools1 {
-  background-color: $additional_colour;
-}
-.tools {
-  color: $main_text_colour;
-  font-family: $secondary_font;
-  font-size: 42px;
-  padding-left: 60px;
-  padding-bottom: 60px;
-}
-.container_icons {
-  text-align: center;
-  margin-bottom: 3rem;
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.box_icon {
-  color: $additional_colour;
-  width: 25%;
-  height: 124px;
-  margin-bottom: 10px;
-}
-.icon_text {
-  color: $additional_colour;
-  font-family: "Montserrat";
-  margin-top: 16px;
 }
