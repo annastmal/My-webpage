@@ -1,4 +1,12 @@
 @import "./variables";
+@mixin line($rotate) {
+  position:absolute;
+  width: 100%;
+  transform: $rotate;
+  color: $secondary_colour;
+  border: 1.5px solid;
+  border-color: rgb(127, 2, 44);
+}
 @mixin mainButtons {
   display: block;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -22,17 +30,27 @@
   text-decoration: none;
 }
 //Home page
-
+.navbar {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: $main_font;
+  font-size: 20px;
+}
 body {
   background-color: $main_background_colour;
- background:  radial-gradient(circle, rgba(240,240,240,1) 0%, rgba(218,227,229,1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(240, 240, 240, 1) 0%,
+    rgba(218, 227, 229, 1) 100%
+  );
 }
 .navbar {
   padding: 10px;
 }
 
 .main_img {
+  position: relative;
   padding-top: 50px;
+  z-index: 1;
 }
 h1 {
   font-family: Jacques Francois Shadow;
@@ -76,7 +94,6 @@ h3 {
   color: #f6f4f4;
   text-shadow: -1px -1px 0 $shadow-colour, 1px -1px 0 $shadow-colour,
     -1px 1px 0 $shadow-colour, 1px 1px 0 $shadow-colour;
-
 }
 .contact_button {
   @include mainButtons();
@@ -84,7 +101,6 @@ h3 {
   text-shadow: -0.1px -0.1px 0 $secondary_colour, 1px -0.5px 0 $secondary_colour,
     -1px 0.1px 0 $secondary_colour, 0.5px 0px 0px $secondary_colour;
   background: $additional_colour;
- 
 }
 //About page
 .about {
@@ -104,7 +120,7 @@ section {
   padding-right: 60px;
 }
 .container-content {
-  display:flex;
+  display: flex;
   text-align: center;
   font-family: "Montserrat";
   font-size: 25px;
@@ -113,7 +129,7 @@ section {
 }
 .hello {
   color: $secondary_colour;
-  font-family: 'McLaren';
+  font-family: "McLaren";
   font-size: 30px;
 }
 
@@ -126,11 +142,11 @@ section {
     justify-content: center;
     padding-bottom: 50px;
     margin-bottom: 50px;
-  }  
+  }
   .main_img {
     width: 300px;
     height: 350px;
-  }  
+  }
 
   h1 {
     margin-left: 100px;
@@ -143,7 +159,7 @@ section {
     justify-content: center;
     margin: 0px auto;
     padding: 0px auto;
-  }  
+  }
   h2 {
     margin-left: 100px;
     font-size: 25px;
@@ -156,24 +172,24 @@ section {
     margin: 0px auto;
     padding: 0px auto;
     margin-top: 24px;
-  }  
+  }
   .line {
     height: 1px;
     width: 100%;
     color: black;
-  }  
+  }
   h3 {
     font-size: 14px;
     margin-bottom: 30px;
     margin-top: 24px;
-  }  
+  }
   .skills_button {
     @include mainButtonsSm(200px, 18px, 30px);
     background: $secondary_colour;
     color: #f6f4f4;
     text-shadow: -1px -1px 0 $shadow-colour, 1px -1px 0 $shadow-colour,
       -1px 1px 0 $shadow-colour, 1px 1px 0 $shadow-colour;
-  }    
+  }
   .contact_button {
     @include mainButtonsSm(200px, 18px, 30px);
     background: $additional_colour;
@@ -181,13 +197,13 @@ section {
     text-shadow: -0.1px -0.1px 0 $secondary_colour,
       1px -0.5px 0 $secondary_colour, -1px 0.1px 0 $secondary_colour,
       0.5px 0px 0px $secondary_colour;
-  }    
+  }
   ///About page
   .wrapper {
     width: 100%;
     margin-top: 50px;
     display: flex;
-  }  
+  }
   .container-content {
     display: flex;
     text-align: center;
@@ -195,52 +211,52 @@ section {
     font-size: 20px;
     color: $main_text_colour;
     line-height: 30px;
-  }  
+  }
   .hello {
     color: $secondary_colour;
-    font-family: 'McLaren';
+    font-family: "McLaren";
     font-size: 24px;
-  }  
-}  
+  }
+}
 @media only screen and (max-width: 560px) {
   h1 {
     font-size: 45px;
     margin: 0px auto;
     padding: 0px auto;
-  }  
+  }
   h2 {
     font-size: 19px;
     margin: 0px auto;
     margin-top: 24px;
     padding: 0px auto;
-  }  
+  }
   h3 {
     font-size: 11px;
     margin-left: 5px !important;
     margin-top: 24px;
-  }  
+  }
   .skills_button {
     @include mainButtonsSm(150px, 14px, 24px);
     background: $secondary_colour;
     color: #f6f4f4;
     text-shadow: -1px -1px 0 $shadow-colour, 1px -1px 0 $shadow-colour,
       -1px 1px 0 $shadow-colour, 1px 1px 0 $shadow-colour;
-  }    
+  }
   .contact_button {
     @include mainButtonsSm(150px, 14px, 24px);
     color: $shadow-colour;
     text-shadow: -0.1px -0.1px 0 $secondary_colour,
       1px -0.5px 0 $secondary_colour, -1px 0.1px 0 $secondary_colour,
       0.5px 0px 0px $secondary_colour;
-    background: $additional_colour;  
-  }  
+    background: $additional_colour;
+  }
   .wrapper {
     width: 100%;
     margin-top: 20px;
     display: flex;
     padding-left: 5px;
     padding-right: 5px;
-  }  
+  }
   .container-content {
     display: flex;
     text-align: center;
@@ -248,10 +264,108 @@ section {
     font-size: 18px;
     color: $main_text_colour;
     line-height: 24px;
-  }  
+  }
   .hello {
     color: $secondary_colour;
-    font-family: 'McLaren';
+    font-family: "McLaren";
     font-size: 20px;
-  }  
-}  
+  }
+}
+
+.angle1,
+.angle1::after {
+  height: 35px;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .angle1,
+  .angle1::after {
+    height: 55px;
+  }
+}
+
+@media (min-width: 900px) {
+  .angle1,
+  .angle1::after {
+    height: 75px;
+  }
+}
+
+.angle1 {
+  background-color: $secondary_colour;
+}
+
+.angle {
+  position: relative;
+}
+
+.angle:after {
+  content: "";
+  position: absolute;
+}
+
+.angle1::after {
+  background-color: $additional_colour;
+  -webkit-clip-path: polygon(0 0, 100% 0, 25% 100%);
+  clip-path: polygon(0% 0, 100% 0%, 25% 100%, 0 0%);
+}
+
+.skills-tools {
+  background-color: $secondary_colour;
+}
+.incline_line1 {
+  @include line(rotate(3deg));
+}
+.incline_line2 {
+  @include line(rotate(-2.3deg));
+}
+.incline_line3 {
+  @include line(rotate(2.62deg));
+top: 80px;
+z-index: 0;
+}
+.incline_line4{
+  @include line(rotate(-2.68deg));
+  top: 80px;
+  z-index: 0;
+}
+h4 {
+  font-family: $main_font;
+  color: $main_text_colour;
+  padding-left: 60px;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  padding-top: 60px;
+}
+.tools1 {
+  background-color: $additional_colour;
+}
+.tools {
+  color: $main_text_colour;
+  font-family: $secondary_font;
+  font-size: 42px;
+  padding-left: 60px;
+  padding-bottom: 60px;
+}
+.container_icons {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.box_icon {
+  color: white;
+  width: 25%;
+  height: 124px;
+  margin-bottom: 10px;
+}
+.icon_text {
+  color: $main_text_colour;
+  font-family: "Montserrat";
+  margin-top: 16px;
+}
