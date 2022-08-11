@@ -73,6 +73,10 @@ h3 {
   text-shadow: -1px -1px 0 #8b8989, 1px -1px 0 #8b8989, -1px 1px 0 #8b8989, 1px 1px 0 #8b8989;
 }
 
+.skills_button:hover {
+  text-decoration: none;
+}
+
 .contact_button {
   display: block;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -86,6 +90,10 @@ h3 {
   color: #8b8989;
   text-shadow: -0.1px -0.1px 0 #7a5361, 1px -0.5px 0 #7a5361, -1px 0.1px 0 #7a5361, 0.5px 0px 0px #7a5361;
   background: #f6f4f4;
+}
+
+.contact_button:hover {
+  text-decoration: none;
 }
 
 .about {
@@ -122,6 +130,15 @@ section {
   font-size: 30px;
 }
 
+.angle {
+  position: relative;
+}
+
+.angle:after {
+  content: "";
+  position: absolute;
+}
+
 .angle1,
 .angle1::after {
   height: 35px;
@@ -132,19 +149,26 @@ section {
   background-color: #7a5361;
 }
 
-.angle {
-  position: relative;
-}
-
-.angle:after {
-  content: "";
-  position: absolute;
-}
-
 .angle1::after {
   background-color: #f6f4f4;
   -webkit-clip-path: polygon(0 0, 100% 0, 25% 100%);
   clip-path: polygon(0% 0, 100% 0%, 25% 100%, 0 0%);
+}
+
+.angle2,
+.angle2::after {
+  height: 700px;
+  width: 100%;
+}
+
+.angle2 {
+  background-color: #f6f4f4;
+}
+
+.angle2::after {
+  background-color: #7a5361;
+  -webkit-clip-path: polygon(48% 0%, 0% 7%, 0% 0%, 100% 0%, 100% 7%);
+          clip-path: polygon(48% 0%, 0% 7%, 0% 0%, 100% 0%, 100% 7%);
 }
 
 .incline_line1 {

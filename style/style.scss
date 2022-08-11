@@ -1,6 +1,6 @@
 @import "./variables";
 @mixin line($rotate) {
-  position:absolute;
+  position: absolute;
   width: 100%;
   transform: $rotate;
   color: $secondary_colour;
@@ -95,12 +95,18 @@ h3 {
   text-shadow: -1px -1px 0 $shadow-colour, 1px -1px 0 $shadow-colour,
     -1px 1px 0 $shadow-colour, 1px 1px 0 $shadow-colour;
 }
+.skills_button:hover {
+  text-decoration: none;
+}
 .contact_button {
   @include mainButtons();
   color: $shadow-colour;
   text-shadow: -0.1px -0.1px 0 $secondary_colour, 1px -0.5px 0 $secondary_colour,
     -1px 0.1px 0 $secondary_colour, 0.5px 0px 0px $secondary_colour;
   background: $additional_colour;
+}
+.contact_button:hover {
+  text-decoration: none;
 }
 //About page
 .about {
@@ -133,17 +139,6 @@ section {
   font-size: 30px;
 }
 ///Angles
-.angle1,
-.angle1::after {
-  height: 35px;
-  width: 100%;
-}
-
-
-.angle1 {
-  background-color: $secondary_colour;
-}
-
 .angle {
   position: relative;
 }
@@ -152,13 +147,33 @@ section {
   content: "";
   position: absolute;
 }
+.angle1,
+.angle1::after {
+  height: 35px;
+  width: 100%;
+}
+
+.angle1 {
+  background-color: $secondary_colour;
+}
 
 .angle1::after {
   background-color: $additional_colour;
   -webkit-clip-path: polygon(0 0, 100% 0, 25% 100%);
   clip-path: polygon(0% 0, 100% 0%, 25% 100%, 0 0%);
 }
-
+.angle2,
+.angle2::after {
+  height: 700px;
+  width: 100%;
+}
+.angle2 {
+  background-color: $additional_colour;
+}
+.angle2::after {
+  background-color: $secondary_colour;
+  clip-path: polygon(48% 0%, 0% 7%, 0% 0%, 100% 0%, 100% 7%);
+}
 .incline_line1 {
   @include line(rotate(3deg));
 }
@@ -170,7 +185,7 @@ section {
   top: 80px;
   z-index: 0;
 }
-.incline_line4{
+.incline_line4 {
   @include line(rotate(-2.68deg));
   top: 80px;
   z-index: 0;
@@ -269,7 +284,7 @@ h4 {
   h4 {
     font-size: 16px;
   }
-  .tools{
+  .tools {
     font-size: 32px;
   }
   .skills_button {
@@ -277,15 +292,15 @@ h4 {
     background: $secondary_colour;
     color: #f6f4f4;
     text-shadow: -1px -1px 0 $shadow-colour, 1px -1px 0 $shadow-colour,
-    -1px 1px 0 $shadow-colour, 1px 1px 0 $shadow-colour;
+      -1px 1px 0 $shadow-colour, 1px 1px 0 $shadow-colour;
   }
   .contact_button {
     @include mainButtonsSm(200px, 18px, 30px);
     background: $additional_colour;
     color: $shadow-colour;
     text-shadow: -0.1px -0.1px 0 $secondary_colour,
-    1px -0.5px 0 $secondary_colour, -1px 0.1px 0 $secondary_colour,
-    0.5px 0px 0px $secondary_colour;
+      1px -0.5px 0 $secondary_colour, -1px 0.1px 0 $secondary_colour,
+      0.5px 0px 0px $secondary_colour;
   }
   ///About page
   .wrapper {
@@ -333,7 +348,7 @@ h4 {
   h4 {
     font-size: 14px;
   }
-  .tools{
+  .tools {
     font-size: 26px;
     padding-right: 80px;
   }
@@ -342,14 +357,14 @@ h4 {
     background: $secondary_colour;
     color: #f6f4f4;
     text-shadow: -1px -1px 0 $shadow-colour, 1px -1px 0 $shadow-colour,
-    -1px 1px 0 $shadow-colour, 1px 1px 0 $shadow-colour;
+      -1px 1px 0 $shadow-colour, 1px 1px 0 $shadow-colour;
   }
   .contact_button {
     @include mainButtonsSm(150px, 14px, 24px);
     color: $shadow-colour;
     text-shadow: -0.1px -0.1px 0 $secondary_colour,
-    1px -0.5px 0 $secondary_colour, -1px 0.1px 0 $secondary_colour,
-    0.5px 0px 0px $secondary_colour;
+      1px -0.5px 0 $secondary_colour, -1px 0.1px 0 $secondary_colour,
+      0.5px 0px 0px $secondary_colour;
     background: $additional_colour;
   }
   .wrapper {
@@ -379,12 +394,13 @@ h4 {
     font-size: 12px;
   }
 }
-
+///Angle media
 @media (min-width: 600px) {
   .angle1,
   .angle1::after {
     height: 55px;
   }
+  
 }
 
 @media (min-width: 900px) {
@@ -392,4 +408,5 @@ h4 {
   .angle1::after {
     height: 75px;
   }
+
 }
