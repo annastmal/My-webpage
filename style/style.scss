@@ -147,6 +147,20 @@ section {
   content: "";
   position: absolute;
 }
+  .angle1,
+.angle1::after {
+  height: 35px;
+  width: 100%;
+}
+
+.angle1 {
+  background-color: $secondary_colour;
+}
+
+.angle1::after {
+  background-color: $additional_colour;
+  clip-path: polygon(0% 0, 100% 0%, 25% 100%, 0 0%);
+}
 .angle1,
 .angle1::after {
   height: 35px;
@@ -159,12 +173,11 @@ section {
 
 .angle1::after {
   background-color: $additional_colour;
-  -webkit-clip-path: polygon(0 0, 100% 0, 25% 100%);
   clip-path: polygon(0% 0, 100% 0%, 25% 100%, 0 0%);
 }
 .angle2,
 .angle2::after {
-  height: 700px;
+  height: 35px;
   width: 100%;
 }
 .angle2 {
@@ -172,13 +185,13 @@ section {
 }
 .angle2::after {
   background-color: $secondary_colour;
-  clip-path: polygon(48% 0%, 0% 7%, 0% 0%, 100% 0%, 100% 7%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 0%, 0% 100%);
 }
 .incline_line1 {
   @include line(rotate(3deg));
 }
 .incline_line2 {
-  @include line(rotate(-2.3deg));
+  @include line(rotate(0.3deg));
 }
 .incline_line3 {
   @include line(rotate(2.62deg));
@@ -400,7 +413,6 @@ h4 {
   .angle1::after {
     height: 55px;
   }
-  
 }
 
 @media (min-width: 900px) {
@@ -408,5 +420,4 @@ h4 {
   .angle1::after {
     height: 75px;
   }
-
 }
