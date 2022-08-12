@@ -147,7 +147,7 @@ section {
   content: "";
   position: absolute;
 }
-  .angle1,
+.angle1,
 .angle1::after {
   height: 35px;
   width: 100%;
@@ -245,9 +245,6 @@ h4 {
   font-family: "Montserrat";
   margin-top: 16px;
 }
-.projects_certificates {
-  background-color: $additional_colour;
-}
 @media only screen and (max-width: 1200px) {
   .hero {
     display: flex;
@@ -343,6 +340,47 @@ h4 {
   .icon_text {
     font-size: 14px;
   }
+}
+.projects_certificates {
+  padding-top: 100px;
+  background-color: $additional_colour;
+}
+.item {
+  opacity: 0.4;
+  transition: 0.4s ease all;
+  margin: 0 20px;
+  transform: scale(0.8);
+}
+@media (max-width: 1000px) {
+  .item {
+    margin: 0;
+    transform: scale(0.9);
+  }
+}
+.active .item {
+  opacity: 1;
+  transform: scale(1);
+}
+.owl-item {
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1);
+}
+
+.owl-carousel:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8%;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -4%;
+  pointer-events: none;
+}
+
+.owl-controls {
+  position: absolute;
+  margin-top: 300px;
 }
 @media only screen and (max-width: 560px) {
   h1 {
