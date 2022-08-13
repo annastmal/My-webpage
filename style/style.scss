@@ -422,36 +422,16 @@ h4 {
   }
 }
 ////PROJECTS&CERTIFICATES
-.projects_certificates {
+.certificates_main {
   padding-top: 100px;
-  background-color: $additional_colour;
-}
-.certificates {
-  color: $main_text_colour;
-  font-family: $secondary_font;
-  font-size: 42px;
-  padding-left: 60px;
-  padding-bottom: 30px;
+  background-color: $main_background_colour;
 }
 .slider {
   position: relative;
   padding-bottom: 20px;
 }
-.slider .owl-item.active.center .slider-card {
-  transform: scale(1.15);
-  opacity: 1;
-  background: $secondary_colour; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    $secondary_colour,
-    $additional_colour
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(0deg, rgb(135, 97, 109) 0%, rgb(231, 184, 202) 84%);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: white;
-  font-size: $main_font;
-}
 .slider-card {
-  background: #fff;
+  background: $additional_colour;
   padding: 0px 0px;
   margin: 50px 15px 90px 15px;
   border-radius: 5px;
@@ -492,5 +472,48 @@ h4 {
   outline: none;
 }
 .owl-dots .owl-dot.active {
-  background: #a16379 !important;
+  background: #acacac !important;
 }
+.projects_main {
+  padding-top: 100px;
+  background-color: $additional_colour;
+}
+.projects_certificates {
+  color: $main_text_colour ;
+  font-family: $secondary_font;
+  font-size: 42px;
+  padding-left: 60px;
+  padding-bottom: 30px;
+}
+.slider .owl-item.active.center .slider-card {
+  transform: scale(1.15);
+  opacity: 1;
+  color: $additional_colour;
+  font-family: $main_font;
+}
+
+.owl-item.active.center .certificates-bg {
+  background: -webkit-linear-gradient(
+    to bottom,
+    $additional_colour,
+    $additional_colour
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background:
+    linear-gradient(0deg, rgba(246,244,244,1) 0%, rgba(224,216,216,1) 100%);
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.owl-item.active.center .projects-bg {
+  background: linear-gradient(
+    0deg,
+    rgb(135, 97, 109) 0%,
+    rgb(231, 184, 202) 84%
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.text-certificates{
+  color:$main_text_colour;
+  opacity: 0.8;
+  font-family: $main_font ;
+}
+

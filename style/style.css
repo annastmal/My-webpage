@@ -479,17 +479,9 @@ h4 {
     font-size: 12px;
   }
 }
-.projects_certificates {
+.certificates_main {
   padding-top: 100px;
-  background-color: #f6f4f4;
-}
-
-.certificates {
-  color: #333232;
-  font-family: Jacques Francois Shadow;
-  font-size: 42px;
-  padding-left: 60px;
-  padding-bottom: 30px;
+  background-color: #dae3e5;
 }
 
 .slider {
@@ -497,17 +489,8 @@ h4 {
   padding-bottom: 20px;
 }
 
-.slider .owl-item.active.center .slider-card {
-  transform: scale(1.15);
-  opacity: 1;
-  background: #7a5361; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(0deg, rgb(135, 97, 109) 0%, rgb(231, 184, 202) 84%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: white;
-  font-size: Open Sans;
-}
-
 .slider-card {
-  background: #fff;
+  background: #f6f4f4;
   padding: 0px 0px;
   margin: 50px 15px 90px 15px;
   border-radius: 5px;
@@ -554,5 +537,40 @@ h4 {
 }
 
 .owl-dots .owl-dot.active {
-  background: #a16379 !important;
+  background: #acacac !important;
+}
+
+.projects_main {
+  padding-top: 100px;
+  background-color: #f6f4f4;
+}
+
+.projects_certificates {
+  color: #333232;
+  font-family: Jacques Francois Shadow;
+  font-size: 42px;
+  padding-left: 60px;
+  padding-bottom: 30px;
+}
+
+.slider .owl-item.active.center .slider-card {
+  transform: scale(1.15);
+  opacity: 1;
+  color: #f6f4f4;
+  font-family: Open Sans;
+}
+
+.owl-item.active.center .certificates-bg { /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(0deg, rgb(246, 244, 244) 0%, rgb(224, 216, 216) 100%);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.owl-item.active.center .projects-bg {
+  background: linear-gradient(0deg, rgb(135, 97, 109) 0%, rgb(231, 184, 202) 84%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.text-certificates {
+  color: #333232;
+  opacity: 0.8;
+  font-family: Open Sans;
 }/*# sourceMappingURL=style.css.map */
