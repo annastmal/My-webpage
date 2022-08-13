@@ -221,62 +221,67 @@
       </div>
     </div>
   </div>
-</div>
-<div class="angle2 angle"></div>
-<div class="projects_certificates">
-<div class="container-fluid">
-  <div class="owl-carousel owl-theme">
-    <div class="item">
-      <a href="#">
-      <img src="images/img-1.png" alt=""/>
-      </a>
-</div>
-</div>
-</div>
 </section>
+<div class="angle2 angle"></div>
+<section class="projects_certificates">
+  <div class="container">
+    <p class=" certificates"><b>My certificates</b></p>
+      <div class="slider">
+                <div class="owl-carousel">
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="images/result.png" alt="" >
+                        </div>
+                        <h5 class="mb-0 text-center"><b>HTML CSS3 Tutorials</b></h5>
+                        <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="images/result-1.png" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>Wordpress Tutorials</b></h5>
+                        <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="images/diploma.png" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>PHP MySQL Tutorials</b></h5>
+                        <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+                    </div>
+                </div>
+            </div>
+  </div>
+</section>
+
 </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript">
-  $('.owl-carousel').owlCarousel({
-    stagePadding: 200,
-    loop:true,
+  $(".owl-carousel").owlCarousel({
+      loop:true,
     margin:10,
-    nav:false,
-    items:1,
-    lazyLoad: true,
     nav:true,
-  responsive:{
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    center: true,
+    navText: [
+        "<i class='fa fa-angle-left'></i>",
+        "<i class='fa fa-angle-right'></i>"
+    ],
+    responsive:{
         0:{
-            items:1,
-            stagePadding: 60
+            items:1
         },
         600:{
-            items:1,
-            stagePadding: 100
+            items:1
         },
         1000:{
-            items:1,
-            stagePadding: 200
-        },
-        1200:{
-            items:1,
-            stagePadding: 250
-        },
-        1400:{
-            items:1,
-            stagePadding: 300
-        },
-        1600:{
-            items:1,
-            stagePadding: 350
-        },
-        1800:{
-            items:1,
-            stagePadding: 400
+            items:3
         }
     }
-})
+  });
 </script>
 </body>
 </html>
