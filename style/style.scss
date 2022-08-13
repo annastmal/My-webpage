@@ -43,6 +43,7 @@ body {
     rgba(218, 227, 229, 1) 100%
   );
 }
+
 .navbar {
   padding: 10px;
 }
@@ -512,8 +513,6 @@ h4 {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .text-certificates{
-  color:$main_text_colour;
-  opacity: 0.8;
+  color:$secondary_colour;
   font-family: $main_font ;
 }
-
