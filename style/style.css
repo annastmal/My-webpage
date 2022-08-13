@@ -187,6 +187,22 @@ section {
           clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 0%, 0% 100%);
 }
 
+.angle3,
+.angle3::after {
+  height: 40px;
+  width: 100%;
+}
+
+.angle3 {
+  background-color: #dae3e5;
+}
+
+.angle3::after {
+  background-color: #f6f4f4;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 90.5% 99.79%, 90.5% 99.79%);
+          clip-path: polygon(0% 0%, 100% 0%, 90.5% 99.79%, 90.5% 99.79%);
+}
+
 .incline_line1 {
   position: absolute;
   width: 100%;
