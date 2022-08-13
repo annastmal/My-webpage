@@ -100,6 +100,7 @@ h3 {
 }
 .skills_button:hover {
   text-decoration: none;
+  
 }
 .contact_button {
   @include mainButtons();
@@ -110,6 +111,7 @@ h3 {
 }
 .contact_button:hover {
   text-decoration: none;
+ 
 }
 //About page
 .about {
@@ -315,6 +317,10 @@ h4 {
   .tools {
     font-size: 32px;
   }
+  .projects_certificates 
+  {
+    font-size: 32px !important;
+  }
   .skills_button {
     @include mainButtonsSm(200px, 18px, 30px);
     background: $secondary_colour;
@@ -378,6 +384,11 @@ h4 {
   }
   .tools {
     font-size: 26px;
+    padding-right: 80px;
+  }
+  .projects_certificates 
+  {
+    font-size: 26px !important;
     padding-right: 80px;
   }
   .skills_button {
@@ -480,7 +491,7 @@ h4 {
   background-color: $additional_colour;
 }
 .projects_certificates {
-  color: $main_text_colour ;
+  color: $main_text_colour;
   font-family: $secondary_font;
   font-size: 42px;
   padding-left: 60px;
