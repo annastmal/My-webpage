@@ -594,6 +594,9 @@ footer {
   text-decoration: none;
   color: $secondary_colour;
 }
+.footer_text:hover {
+  color: #c5a0ae;
+}
 textarea:hover {
   box-shadow: $shadow-colour 3px 3px 10px;
 }

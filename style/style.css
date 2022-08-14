@@ -655,6 +655,10 @@ footer {
   color: #7a5361;
 }
 
+.footer_text:hover {
+  color: #c5a0ae;
+}
+
 textarea:hover {
   box-shadow: #8b8989 3px 3px 10px;
 }
