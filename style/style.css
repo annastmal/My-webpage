@@ -4,13 +4,19 @@
   font-size: 20px;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background-color: #dae3e5;
-  background: radial-gradient(circle, rgb(240, 240, 240) 0%, rgb(218, 227, 229) 100%);
 }
 
 .navbar {
-  padding: 10px;
+  margin: 0;
+  padding: 10px 15px;
 }
 
 .main_img {
@@ -581,8 +587,122 @@ h4 {
 .owl-item.active.center .projects-bg {
   background: linear-gradient(0deg, rgb(135, 97, 109) 0%, rgb(231, 184, 202) 84%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.owl-item.active.center .projects-bg .contact_me {
+  font-size: 32px;
+}
+.owl-item.active.center .projects-bg .contact_me1 {
+  font-size: 18px;
+  line-height: 24px;
+}
+.owl-item.active.center .projects-bg .contact_me {
+  font-size: 30px;
+}
+.owl-item.active.center .projects-bg .contact_me1 {
+  font-size: 16px;
+  line-height: 20px;
+}
 
 .text-certificates {
   color: #7a5361;
   font-family: Open Sans;
+}
+
+.contact {
+  background-image: url(/images/background.png);
+  height: 600px;
+}
+
+.container-social-i {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.container-social-i .social_icons a {
+  color: #7a5361;
+  transition: color 0.2s ease-in-out;
+}
+
+.container-social-i .social_icons a:hover {
+  color: #eea7ac;
+  background-color: transparent;
+}
+
+.container-social-i .social_icons {
+  list-style-type: none;
+}
+
+.container-social-i .social_icons svg {
+  fill: #7a5361;
+}
+
+.container-social-i .social_icons svg:hover {
+  fill: #dae3e5;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #dae3e5;
+  padding: 25px 0 20px;
+  font-family: "Montserrat";
+}
+
+.footer_text {
+  text-decoration: none;
+  color: #7a5361;
+}
+
+textarea:hover {
+  box-shadow: #8b8989 3px 3px 10px;
+}
+
+input:hover {
+  box-shadow: #8b8989 3px 3px 10px;
+}
+
+.form-control:focus {
+  border-color: transparent;
+  box-shadow: #7a5361 3px 3px 10px;
+}
+
+.contact_me {
+  color: #333232;
+  font-family: Jacques Francois Shadow;
+  font-size: 36px;
+}
+
+.contact_me1 {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 18px;
+  color: #333232;
+  line-height: 24px;
+}
+
+.msg_text {
+  font-family: "Montserrat";
+  color: #333232;
+}
+
+.send_btn {
+  margin: 20px auto;
+  background: #c5a0ae;
+  color: white;
+  opacity: 0.8;
+  font-size: 16px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease-in-out;
+  font-family: "Montserrat";
+}
+
+.send_btn:hover {
+  background-color: #c5a0ae;
+  opacity: 1;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

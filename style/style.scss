@@ -35,17 +35,18 @@
   font-family: $main_font;
   font-size: 20px;
 }
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 body {
   background-color: $main_background_colour;
-  background: radial-gradient(
-    circle,
-    rgba(240, 240, 240, 1) 0%,
-    rgba(218, 227, 229, 1) 100%
-  );
 }
 
 .navbar {
-  padding: 10px;
+  margin: 0;
+  padding: 10px 15px;
 }
 
 .main_img {
@@ -321,8 +322,7 @@ h4 {
   .tools {
     font-size: 32px;
   }
-  .projects_certificates 
-  {
+  .projects_certificates {
     font-size: 32px !important;
   }
   .skills_button {
@@ -390,8 +390,7 @@ h4 {
     font-size: 26px;
     padding-right: 80px;
   }
-  .projects_certificates 
-  {
+  .projects_certificates {
     font-size: 26px !important;
     padding-right: 80px;
   }
@@ -515,10 +514,12 @@ h4 {
     $additional_colour,
     $additional_colour
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background:
-    linear-gradient(0deg, rgba(246,244,244,1) 0%, rgba(224,216,216,1) 100%);
- /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: linear-gradient(
+    0deg,
+    rgba(246, 244, 244, 1) 0%,
+    rgba(224, 216, 216, 1) 100%
+  );
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .owl-item.active.center .projects-bg {
@@ -527,8 +528,113 @@ h4 {
     rgb(135, 97, 109) 0%,
     rgb(231, 184, 202) 84%
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ///Contac-me page
+  .contact_me {
+    font-size: 32px;
+  }
+  .contact_me1 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .contact_me {
+    font-size: 30px;
+  }
+  .contact_me1 {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
-.text-certificates{
-  color:$secondary_colour;
-  font-family: $main_font ;
+.text-certificates {
+  color: $secondary_colour;
+  font-family: $main_font;
+}
+.contact {
+  background-image: url(/images/background.png);
+  height: 600px;
+}
+
+.container-social-i {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.container-social-i .social_icons a {
+  color: $secondary_colour;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.container-social-i .social_icons a:hover {
+  color: #eea7ac;
+  background-color: transparent;
+}
+
+.container-social-i .social_icons {
+  list-style-type: none;
+}
+
+.container-social-i .social_icons svg {
+  fill: $secondary_colour;
+}
+
+.container-social-i .social_icons svg:hover {
+  fill: $main_background_colour;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: $main_background_colour;
+  padding: 25px 0 20px;
+  font-family: "Montserrat";
+}
+.footer_text {
+  text-decoration: none;
+  color: $secondary_colour;
+}
+textarea:hover {
+  box-shadow: $shadow-colour 3px 3px 10px;
+}
+input:hover {
+  box-shadow: $shadow-colour 3px 3px 10px;
+}
+.form-control:focus {
+  border-color: transparent;
+  box-shadow: $secondary_colour 3px 3px 10px;
+}
+.contact_me {
+  color: $main_text_colour;
+  font-family: $secondary_font;
+  font-size: 36px;
+}
+.contact_me1 {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 18px;
+  color: $main_text_colour;
+  line-height: 24px;
+}
+.msg_text {
+  font-family: "Montserrat";
+  color: $main_text_colour;
+}
+.send_btn {
+  margin: 20px auto;
+  background: #c5a0ae;
+  color: white;
+  opacity: 0.8;
+  font-size: 16px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 30%);
+  transition: all 200ms ease-in-out;
+  font-family: "Montserrat";
+}
+.send_btn:hover {
+  background-color: #c5a0ae;
+  opacity: 1;
+  color: white;
 }
