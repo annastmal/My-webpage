@@ -89,29 +89,33 @@ h3 {
 
 .buttons {
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .skills_button {
   @include mainButtons();
   background: $secondary_colour;
+  opacity: 0.9;
   color: #f6f4f4;
   text-shadow: -1px -1px 0 $shadow-colour, 1px -1px 0 $shadow-colour,
     -1px 1px 0 $shadow-colour, 1px 1px 0 $shadow-colour;
 }
 .skills_button:hover {
   text-decoration: none;
-  
+  color: #f6f4f4;
+  opacity: 1;
 }
 .contact_button {
   @include mainButtons();
   color: $shadow-colour;
+  opacity: 0.9;
   text-shadow: -0.1px -0.1px 0 $secondary_colour, 1px -0.5px 0 $secondary_colour,
     -1px 0.1px 0 $secondary_colour, 0.5px 0px 0px $secondary_colour;
   background: $additional_colour;
 }
 .contact_button:hover {
   text-decoration: none;
- 
+  opacity: 1;
+  color: $shadow-colour;
 }
 //About page
 .about {
@@ -434,6 +438,7 @@ h4 {
   }
 }
 ////PROJECTS&CERTIFICATES
+
 .certificates_main {
   padding-top: 100px;
   background-color: $main_background_colour;

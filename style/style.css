@@ -55,7 +55,7 @@ h3 {
 
 .buttons {
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .skills_button {
@@ -69,12 +69,15 @@ h3 {
   text-align: center;
   text-decoration: none;
   background: #7a5361;
+  opacity: 0.9;
   color: #f6f4f4;
   text-shadow: -1px -1px 0 #8b8989, 1px -1px 0 #8b8989, -1px 1px 0 #8b8989, 1px 1px 0 #8b8989;
 }
 
 .skills_button:hover {
   text-decoration: none;
+  color: #f6f4f4;
+  opacity: 1;
 }
 
 .contact_button {
@@ -88,12 +91,15 @@ h3 {
   text-align: center;
   text-decoration: none;
   color: #8b8989;
+  opacity: 0.9;
   text-shadow: -0.1px -0.1px 0 #7a5361, 1px -0.5px 0 #7a5361, -1px 0.1px 0 #7a5361, 0.5px 0px 0px #7a5361;
   background: #f6f4f4;
 }
 
 .contact_button:hover {
   text-decoration: none;
+  opacity: 1;
+  color: #8b8989;
 }
 
 .about {
