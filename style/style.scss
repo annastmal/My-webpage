@@ -434,7 +434,12 @@ h4 {
   .icon_text {
     font-size: 12px;
   }
+  .footer1 {
+    font-size: 14px ;
+  }
+  
 }
+
 ////PROJECTS&CERTIFICATES
 
 .certificates_main {
@@ -557,7 +562,7 @@ h4 {
   flex-direction: row;
   justify-content: center;
   gap: 25px;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .container-social-i .social_icons a {
@@ -579,15 +584,16 @@ h4 {
   fill: $secondary_colour;
 }
 
-.container-social-i .social_icons svg:hover {
-  fill: $main_background_colour;
-}
+
 footer {
   display: flex;
   justify-content: center;
   background-color: $main_background_colour;
   padding: 25px 0 20px;
   font-family: "Montserrat";
+}
+.footer1{
+  margin-top: 10px;
 }
 .footer_text {
   text-decoration: none;

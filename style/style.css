@@ -497,6 +497,9 @@ h4 {
   .icon_text {
     font-size: 12px;
   }
+  .footer1 {
+    font-size: 14px;
+  }
 }
 .certificates_main {
   padding-top: 100px;
@@ -617,7 +620,7 @@ h4 {
   flex-direction: row;
   justify-content: center;
   gap: 25px;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .container-social-i .social_icons a {
@@ -638,16 +641,16 @@ h4 {
   fill: #7a5361;
 }
 
-.container-social-i .social_icons svg:hover {
-  fill: #dae3e5;
-}
-
 footer {
   display: flex;
   justify-content: center;
   background-color: #dae3e5;
   padding: 25px 0 20px;
   font-family: "Montserrat";
+}
+
+.footer1 {
+  margin-top: 10px;
 }
 
 .footer_text {
