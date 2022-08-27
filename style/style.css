@@ -7,7 +7,6 @@
 html,
 body {
   max-width: 100%;
-  overflow-x: hidden;
 }
 
 body {
@@ -22,7 +21,6 @@ body {
 .main_img {
   position: relative;
   padding-top: 50px;
-  z-index: 1;
 }
 
 h1 {
